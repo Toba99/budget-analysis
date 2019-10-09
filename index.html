@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+   <div class="container">
+       <h1>Budget analysis</h1>
+    <table>
+        <tr>
+            <td colspan="3" class="heading">Current account Balances</td>
+        </tr>
+
+
+        <tr>
+            <td class="income">Savings Account</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="S-acc" class="account-space" name="S-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+        <tr>
+            <td class="income">Current Account</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="C-acc" class="account-space" name="C-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+        <tr>
+            <td class="income">Other Accounts</td>
+            <td class="naira">N</td>
+            <td>
+               <input id="O-acc" class="account-space" name="O-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3" class="blank-spacer"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="blank-spacer"></td>
+        </tr>
+        
+        
+        <tr>
+            <td colspan="3" class="heading">Income(salary)</td>
+        </tr>
+        <tr>
+            <td class="income">Job</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="J-acc" class="account-space" name="J-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+        <tr>
+            <td class="income">Side Projects</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="P-acc" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+        <tr>
+            <td class="income">Bonus</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="B-acc" class="account-space" name="B-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3" class="blank-spacer"></td>
+        </tr>
+        <tr>
+            <td colspan="3" class="blank-spacer"></td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="heading">Expenses</td>
+        </tr>
+
+        
+        <tr>
+            <td class="income">Rent</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp1" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>        
+        <tr>
+           <td class="income">Electricity</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp2" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>            
+        <tr>
+            <td class="income">Food</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp3" class="account-space" name="P-acc" type="text" value="0" size="14">
+                </td>
+        </tr>            
+        <tr>
+            <td class="income">Fuel</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp4" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>            
+        <tr>
+            <td class="income">Internet</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp5" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>            
+        <tr>
+            <td class="income">Needs</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp6" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>            
+        <tr>
+            <td class="income">Side Projects</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp7" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>            
+        <tr>
+            <td class="income">Impulse</td>
+            <td class="naira">N</td>
+            <td>
+                <input id="exp8" class="account-space" name="P-acc" type="text" value="0" size="14">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="3" class="calc-table" >
+            <button id="solve" class="button"onclick="return false">Calculate Budget</button> <br/>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="heading">Budget Total&nbsp;</td>
+            <td class="naira">N</td>
+            <td>
+            <input id="bTot" class="budgetAnswer" name="bTot" type="text" size="14" />
+            </td>
+          </tr>
+
+    </table>
+
+   </div> 
+
+    <script src="test.js" charset="UTF-8"></script>
+</body>
+</html>
